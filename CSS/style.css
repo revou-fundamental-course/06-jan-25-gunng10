@@ -6,7 +6,7 @@
     align-items: center;
     padding-right: 50px;
     padding-left: 30px;
-    background-color: rgb(193, 209, 69);
+    background-color: white
 }
 
 .logo-icon {
@@ -45,7 +45,8 @@ nav>a {
 }
 
 .content {
-    height: 500px;
+    display: flex;
+    height: 200px;
 }
 
 footer {
@@ -54,4 +55,47 @@ footer {
 
 .tab {
     padding-left: 50px;
+    display: flex;
+}
+
+.bandung {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    background-size: cover;
+    margin-right: 50px;
+    margin-left: 100px;
+}
+
+.jakarta {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    background-size: cover;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.bogor {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    background-size: cover;
+    margin-left: 50px;
+}
+
+.text-bogor {
+    margin-left: 260px;
+}
+
+.text-jakarta {
+    margin-left: 250px;
+}
+
+.text-bandung {
+    margin-left: 170px;
+}
+
+.p-text {
+    display: flex;
 }
