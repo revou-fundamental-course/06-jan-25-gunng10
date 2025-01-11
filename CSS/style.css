@@ -42,6 +42,7 @@ nav>a {
     background-image: url(https://picsum.photos/1000);
     background-size: cover;
     background-position: center;
+    margin-top: 50px;
 }
 
 .content {
@@ -53,7 +54,8 @@ footer {
     text-align: center;
 }
 
-.tab {
+.tab-unique {
+    margin-top: 50px;
     padding-left: 50px;
     display: flex;
 }
@@ -97,5 +99,39 @@ footer {
 }
 
 .p-text {
+    display: flex;
+}
+
+.th-food {
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+.td-food-no {
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.td-food-kota {
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.td-food-jenis {
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.margin-table-food {
+    margin-left: 50px;
+}
+
+.tab {
+    padding-left: 50px;
     display: flex;
 }
