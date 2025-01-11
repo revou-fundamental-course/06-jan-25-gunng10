@@ -51,7 +51,8 @@ nav>a {
 }
 
 footer {
-    text-align: center;
+    text-align: right;
+    margin-right: 50px;
 }
 
 .tab-unique {
@@ -129,9 +130,14 @@ footer {
 
 .margin-table-food {
     margin-left: 50px;
+    margin-bottom: 50px;
 }
 
 .tab {
     padding-left: 50px;
+    display: flex;
+}
+
+.message-us {
     display: flex;
 }
