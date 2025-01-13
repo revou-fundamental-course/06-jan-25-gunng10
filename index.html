@@ -105,12 +105,47 @@
              <header id="message-us" class="tab">
                 <h1>Message Us</h1>
              </header>
+            
+             <div style="display: flex;">
 
-             <div class="message-us">
-                
-             </div>
+               <div class="form-container">
+                  <form action="#" method="POST">
+                     <div class="form-group">
+                       <label for="nama">Nama:</label>
+                       <input type="text" id="nama" name="nama" placeholder="Nama" required>
+                     </div>
+                      <div class="form-group">
+                       <label for="tanggal-lahir">Tanggal Lahir:</label>
+                       <input type="date" id="tanggal-lahir" name="tanggal-lahir" required>
+                     </div>
+                      <div class="form-group">
+                       <label>Jenis Kelamin:</label>
+                        <div class="gender-container">
+                           <label>
+                               <input type="radio" name="jenis-kelamin" value="Laki-Laki" required> Laki-Laki
+                           </label>
+                           <label>
+                               <input type="radio" name="jenis-kelamin" value="Perempuan"> Perempuan
+                           </label>
+                        </div>
+                     </div>
+                     <div class="form-group">
+                       <label for="pesan">Pesan:</label>
+                       <textarea id="pesan" name="pesan" placeholder="Pesan" required></textarea>
+                     </div>
+                     <div class="form-group">
+                       <button type="submit">Submit</button>
+                     </div>
+                  </form>
+               </div>
+
+               <div class="right-message-us">
+                  <table class="table-right-mus">
+                     <td>Current Time: 13 Januari 2025, 14.44.28 GMT+7</td>
+                  </table>
+               </div>
+            </div>
           </section>
-
      </main>
 
      <hr/>
