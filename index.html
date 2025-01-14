@@ -32,8 +32,10 @@
          <section>
             <!-- Title -->
              <header id="home-page">
-                <h1 class="tab-unique">Hi <span id="user-greeting">User</span>, Welcome to our website</h1>
+                <h1 class="tab-unique">Hi<span id="user-greeting">User</span>, Welcome to our website</h1>
                 <p class="tab">Ini adalah latihan website pertama</p>
+                <button id="tombol">Ganti nama</button>
+                <script src="JS/script.js"></script>
              </header>
 
              <div class="banner-image">
@@ -105,46 +107,43 @@
              <header id="message-us" class="tab">
                 <h1>Message Us</h1>
              </header>
-            
-             <div style="display: flex;">
 
-               <div class="form-container">
-                  <form action="#" method="POST">
-                     <div class="form-group">
+             <div class="form-message-us">
+               <form id="inputForm">
+                   <div class="form-group">
                        <label for="nama">Nama:</label>
-                       <input type="text" id="nama" name="nama" placeholder="Nama" required>
-                     </div>
-                      <div class="form-group">
-                       <label for="tanggal-lahir">Tanggal Lahir:</label>
-                       <input type="date" id="tanggal-lahir" name="tanggal-lahir" required>
-                     </div>
-                      <div class="form-group">
+                       <input type="text" id="nama" name="nama" required>
+                   </div>
+                   <div class="form-group">
+                       <label for="tanggalLahir">Tanggal Lahir:</label>
+                       <input type="date" id="tanggalLahir" name="tanggalLahir" required>
+                   </div>
+                   <div class="form-group">
                        <label>Jenis Kelamin:</label>
-                        <div class="gender-container">
-                           <label>
-                               <input type="radio" name="jenis-kelamin" value="Laki-Laki" required> Laki-Laki
-                           </label>
-                           <label>
-                               <input type="radio" name="jenis-kelamin" value="Perempuan"> Perempuan
-                           </label>
-                        </div>
-                     </div>
-                     <div class="form-group">
+                       <label for="lakiLaki">Laki-Laki</label>
+                       <input type="radio" id="lakiLaki" name="jenisKelamin" value="Laki-Laki" required>
+                       <label for="perempuan">Perempuan</label>
+                       <input type="radio" id="perempuan" name="jenisKelamin" value="Perempuan">
+                   </div>
+                   <div class="form-group">
                        <label for="pesan">Pesan:</label>
-                       <textarea id="pesan" name="pesan" placeholder="Pesan" required></textarea>
-                     </div>
-                     <div class="form-group">
-                       <button type="submit">Submit</button>
-                     </div>
-                  </form>
-               </div>
-
-               <div class="right-message-us">
-                  <table class="table-right-mus">
-                     <td>Current Time: 13 Januari 2025, 14.44.28 GMT+7</td>
-                  </table>
-               </div>
-            </div>
+                       <textarea id="pesan" name="pesan" required></textarea>
+                   </div>
+                   <button type="button" onclick="submitForm()">Submit</button>
+               </form>
+               <div class="container">
+                  <h2>Submitted Data</h2>
+                  <div id="output">
+                      <p>Current time: <span id="currentTime"></span></p>
+                      <p>Nama: <span id="outputNama"></span></p>
+                      <p>Tanggal Lahir: <span id="outputTanggalLahir"></span></p>
+                      <p>Jenis Kelamin: <span id="outputJenisKelamin"></span></p>
+                      <p>Pesan: <span id="outputPesan"></span></p>
+                  </div>
+              </div>
+           </div>
+           
+           
           </section>
      </main>
 
