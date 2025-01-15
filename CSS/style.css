@@ -204,3 +204,10 @@ button {
 button:hover {
             background-color: #0056b3;
 }
+
+/* Ukuran layar */
+@media only screen and (max-width: 480px) {
+.main-header {
+    flex-direction: column;
+}
+}
